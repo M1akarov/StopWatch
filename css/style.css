@@ -1,0 +1,128 @@
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timer__block {
+  width: 150px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.timer__block .time {
+  background-color: #2987be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 150px;
+  border-radius: 100%;
+  font-size: 95px;
+}
+
+.timer__block .title {
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  color: inherit;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.buttons .button {
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+  width: 180px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.buttons .button.start, .buttons .button.stop, .buttons .button.pause {
+  color: #2987be;
+}
+
+.buttons .button.start:hover, .buttons .button.stop:hover, .buttons .button.pause:hover {
+  background-color: #2987be;
+  color: white;
+}
+
+.buttons .button.pause:hover {
+  background-color: #2987be;
+  color: white;
+}
+
+.buttons .button.stop:hover {
+  background-color: red;
+  color: white;
+}
+
+.buttons .button.new:disabled {
+  background-color: none;
+  cursor: not-allowed;
+}
+
+.buttons .button.new:hover {
+  background-color: none;
+}
+
+.results__block {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 240px;
+  border: 1px solid #1059b8;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  color: #2987be;
+}
+
+.results__block .results__info {
+  margin: 10px 0;
+}
